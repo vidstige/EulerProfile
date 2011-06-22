@@ -7,5 +7,12 @@
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello" />
+    android:text="No profile set" />
+    
+<Button
+	android:id="@+id/select"
+	android:text="Select profile"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" />
+
 </LinearLayout>
