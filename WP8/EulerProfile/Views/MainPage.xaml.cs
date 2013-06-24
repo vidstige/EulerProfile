@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
+﻿using EulerProfile.ViewModels;
+using Microsoft.Phone.Controls;
+using System;
 using System.Windows.Controls;
 using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using EulerProfile.Resources;
-using EulerProfile.ViewModels;
 
-namespace EulerProfile
+namespace EulerProfile.Views
 {
     public partial class MainPage : PhoneApplicationPage
     {
