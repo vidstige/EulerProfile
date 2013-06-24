@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace EulerProfile.ViewModels
 {
-    public class ItemViewModel : INotifyPropertyChanged
+    public class ItemViewModel: ViewModel
     {
         private string _id;
         private string _lineOne;
@@ -51,16 +51,6 @@ namespace EulerProfile.ViewModels
             {
                 _lineThree = value;
                 NotifyPropertyChanged("LineThree");
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged(String propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (null != handler)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }

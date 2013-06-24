@@ -5,7 +5,7 @@ using EulerProfile.Resources;
 
 namespace EulerProfile.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel: ViewModel
     {
         private readonly ObservableCollection<ItemViewModel> _items = new ObservableCollection<ItemViewModel>();
 
@@ -77,16 +77,6 @@ namespace EulerProfile.ViewModels
             this.Items.Add(new ItemViewModel() { ID = "15", LineOne = "runtime sixteen", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" });
 
             this.IsDataLoaded = true;
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged(String propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (null != handler)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
         }
     }
 }
