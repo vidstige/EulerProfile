@@ -25,5 +25,10 @@ namespace EulerProfile.Model
         {
             get { return new Uri("http://projecteuler.net/images/levels/level_1.png"); }
         }
+
+        public string LevelText
+        {
+            get { return string.Format("Level {0}", _level); }
+        }
     }
 }

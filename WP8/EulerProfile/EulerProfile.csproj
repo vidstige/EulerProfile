@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\SweetWebClientExtensions.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="Model\UserProfile.cs" />
     <Compile Include="Repositories\ProjectEulerRepository.cs" />
