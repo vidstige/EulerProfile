@@ -2,7 +2,7 @@
 
 namespace EulerProfile.Model
 {
-    class UserProfile
+    public class UserProfile
     {
         private string _username;
         private string _country;
@@ -18,6 +18,8 @@ namespace EulerProfile.Model
             _solved = solved;
             _level = level;
         }
+
+        public string Username { get { return _username; } }
 
         public Uri LevelIcon
         {

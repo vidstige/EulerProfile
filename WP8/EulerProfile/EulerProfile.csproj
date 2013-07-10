@@ -96,9 +96,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="DetailsPage.xaml.cs">
-      <DependentUpon>DetailsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Model\UserProfile.cs" />
     <Compile Include="Repositories\ProjectEulerRepository.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
@@ -110,7 +107,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
   </ItemGroup>
@@ -119,10 +115,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="DetailsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

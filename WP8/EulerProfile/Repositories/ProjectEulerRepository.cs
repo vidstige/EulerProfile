@@ -21,7 +21,7 @@ namespace EulerProfile.Repositories
             return tcs.Task;
         }
 
-        public async Task<UserProfile> GetByUserName(string username)
+        public async Task<UserProfile> GetByUsername(string username)
         {
             Uri uri = new Uri("http://projecteuler.net/profile/" + username + ".txt");
             string rawProfile = await DownloadString(uri);
