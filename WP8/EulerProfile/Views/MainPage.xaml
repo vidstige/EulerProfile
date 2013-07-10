@@ -52,12 +52,18 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <Image
                 Grid.Column="0"
                 Width="100" Height="100" Source="{Binding Me.LevelIcon}" />        
             <TextBlock
                 Grid.Column="1"
                 Text="{Binding Me.LevelText}" />
+
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Me.SolvedText}" />
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

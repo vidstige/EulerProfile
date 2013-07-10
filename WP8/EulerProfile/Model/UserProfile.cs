@@ -30,5 +30,10 @@ namespace EulerProfile.Model
         {
             get { return string.Format("Level {0}", _level); }
         }
+
+        public string SolvedText
+        {
+            get { return _solved; }
+        }
     }
 }
